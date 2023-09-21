@@ -25,7 +25,7 @@ export default function Footer() {
 	};
   
   useEffect(() => {
-      axios.get('http://localhost:4000/api/v1/jobs').then((res)=>
+      axios.get('hire-dashboard.vercel.app/api/v1/jobs').then((res)=>
        { setActiveJobData(res?.data.ActiveJobData);
         setCountReceived(res?.data?.ActiveJobData?.countPerDay?.Received)
         setCountApplied(res?.data?.ActiveJobData?.countPerDay?.Applied)
